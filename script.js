@@ -36,33 +36,19 @@
 // let result = calculateArea(radius, area)
 // console.log(result)
 
+const form = document.getElementById("form")
+const taskinput = document.getElementById("taskinput")
+const taskContainer = document.querySelector(".taskContainer")
 
-// const radiuss = [3, 2, 1, 4]
-// const areaa = function (radiuss) {
-//   return Math.PI*radiuss*radiuss
-// }
+form.addEventListener("submit", function (event) {
+  event.preventDefault();
+})
 
-// const calculates = function (radiuss,formula) {
-//   let output = []
-//   for (i = 0; i < radiuss.length; i++){
-//     output.push(formula(radiuss[i]))
-//   }
-//   return output
-// }
-// let res = calculates(radiuss, areaa)
-// console.log(res)
+const newTask = taskinput.value;
+console.log(taskinput.value)
 
-const radius = [2, 1, 3, 4]
-const logic = function (radius) {
-  return Math.PI * radius * radius
-}
+const pTag = document.createElement("p")
+pTag.textContent=newTask
+console.log(pTag)
 
-const cal = function (radius,logic) {
-  let output=[]
-  for ( i = 0; i < radius.length; i++){
-    output.push(logic(radius[i]))
-  }
-  return output;
-}
-let result = cal(radius,logic)
-console.log(result)
+
