@@ -44,11 +44,6 @@ form.addEventListener("submit", function (event) {
   event.preventDefault();
 })
 
-const newTask = taskinput.value;
 console.log(taskinput.value)
-
-const pTag = document.createElement("p")
-pTag.textContent=newTask
-console.log(pTag)
 
 
