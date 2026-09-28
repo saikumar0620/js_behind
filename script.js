@@ -60,8 +60,8 @@ function Student(name,roll,mail) {
 
 }
 
-const user1= new user("sai",1,"sai@gmail.com") 
-const user2 = new user("navn", 2, "navn@gmail.com")
+const user1= new Student("sai",1,"sai@gmail.com") 
+const user2 = new Student("navn", 2, "navn@gmail.com")
 user1.data()
 console.log(user1.roll)
 
