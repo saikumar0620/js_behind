@@ -36,14 +36,34 @@
 // let result = calculateArea(radius, area)
 // console.log(result)
 
-const form = document.getElementById("form")
-const taskinput = document.getElementById("taskinput")
-const taskContainer = document.querySelector(".taskContainer")
+// const form = document.getElementById("form")
+// const taskinput = document.getElementById("taskinput")
+// const taskContainer = document.querySelector(".taskContainer")
 
-form.addEventListener("submit", function (event) {
-  event.preventDefault();
-})
+// form.addEventListener("submit", function (event) {
+//   event.preventDefault();
+// })
 
-console.log(taskinput.value)
+// console.log(taskinput.value)
+
+
+// constructor functions creation: construction function is a special type of function
+// with a multiple similar objects from a single blue print 
+
+function Student(name,roll,mail) {
+  this.name = name;
+  this.roll = roll;
+  this.roll = mail;
+  this.data = function () {
+    console.log(`hello my name is ${this.name}`)
+  }
+
+}
+
+const user1= new user("sai",1,"sai@gmail.com") 
+const user2 = new user("navn", 2, "navn@gmail.com")
+user1.data()
+console.log(user1.roll)
+
 
 
