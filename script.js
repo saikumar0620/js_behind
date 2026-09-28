@@ -47,23 +47,30 @@
 // console.log(taskinput.value)
 
 
-// constructor functions creation: construction function is a special type of function
-// with a multiple similar objects from a single blue print 
+// // constructor functions creation: construction function is a special type of function
+// // with a multiple similar objects from a single blue print 
 
-function Student(name,roll,mail) {
-  this.name = name;
-  this.roll = roll;
-  this.mail = mail;
-  this.data = function () {
-    console.log(`hello my name is ${this.name},my roll is ${this.roll} , my mail id is ${this.mail}`)
-  }
+// function Student(name,roll,mail) {
+//   this.name = name;
+//   this.roll = roll;
+//   this.mail = mail;
+//   this.data = function () {
+//     console.log(`hello my name is ${this.name},my roll is ${this.roll} , my mail id is ${this.mail}`)
+//   }
 
+// }
+
+// const user1= new Student("sai","1","sai@gmail.com") 
+// const user2 = new Student("navn", "2", "navn@gmail.com")
+// user1.data()
+// console.log(user1.roll)
+
+// scopes
+
+function scopeFunction() {
+  console.log(arguments)
 }
-
-const user1= new Student("sai","1","sai@gmail.com") 
-const user2 = new Student("navn", "2", "navn@gmail.com")
-user1.data()
-console.log(user1.roll)
+scopeFunction("Sai",23,"madhapur")
 
 
 
