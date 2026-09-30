@@ -67,16 +67,17 @@
 
 // scopes
 
-// function scopeFunction() {
-//   console.log(arguments)
-// }
-// scopeFunction("Sai", 23, "madhapur")
-
-var fun = () => {
-     console.log(arguments)
-
+function scopeFunction() {
+  console.log(arguments)
+  console.log(typeof arguments)
 }
- fun("Sai", 23, "madhapur")
+scopeFunction("Sai", 23, "madhapur")
+
+// var fun = () => {
+//      console.log(arguments)
+
+// }
+//  fun("Sai", 23, "madhapur")
 
 
 
